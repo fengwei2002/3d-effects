@@ -1,0 +1,26 @@
+.img3Dbox {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    /* border: 1px solid; */
+    margin: 100px auto;
+    transform-style: preserve-3d;
+}
+
+.img3Dbox img {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    /* transform: rotateX(1000deg) rotateY(1000deg); */
+    transform: rotateX(40deg) rotateY(10deg) rotateZ(-30deg);
+    transition: all 1s linear;
+    /* X轴偏移量、Y轴偏移量、模糊半径、扩散半径和颜色。 */
+    box-shadow: 12px 12px 12px 4px cadetblue;
+}
+
+.img3Dbox img:hover {
+    transform: rotateX(0deg);
+    box-shadow: 12px 12px 12px 4px white;
+}
